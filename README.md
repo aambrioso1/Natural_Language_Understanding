@@ -70,7 +70,35 @@ The predicted performance of the largest model is presented in the body of the p
 * results seem to be consistent across different tasks types (Section 3.3)
 
 
-Start at 4. Related work (5_14_22)
+* Learning shown by LLMs is a from of implicit Bayseian inference
+* LLMs are recoverying previously-experienced task
+* Task instructions as zero-shot prompts or part o f a few-shot prompt.
+* Explicitly decomposing problems into steps. (Mishra et al. 2021a) 
+* "Task prompt can be worth may examples"
+* Prompts with taks descriptors and example with explanations.
+* Few shot prompting to have modes explain their answer for user interpretability not for improved performance (Marasovic et al. 2021)
+* Models can benefit from examples that decompose the reasoning process (Wei et al, 2022)
+* Using "external scratchpads" to store and remember intermediate computations
+* This work provides explanations after the answer in the prompt rather than before.
+* Training LMs with instructions or explanations.
+* Explanations can be used in other domains like for computer vision, mathematics problem-solving, relational reasoning, and reinforcement learning
+* Sharp transitions due to increasing model size have been observed and discussed.
+
+Quote:  "future larger models may exhibit yet larger benefits (p. 10)"
+
+5. Discussion
+
+* Can explanations improve few-shot learning?  Yes
+* Why are post answer explanations interesting?
+
+Start at this question in 5 on page 11. 
+
+
+
+
+
+
+
 
 
 
