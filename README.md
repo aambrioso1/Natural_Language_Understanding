@@ -34,19 +34,51 @@ About models used in the "Can Models learn ..." paper:
 "We evaluated a set of large language models ranging from 1 billion to 280 billion parameters (Rae et al., 2021). These models differ in architectural features such as the number of layers and embedding size, but crucially (that is ... "in order to minimize confounding" [my editorial comment]) have been trained on the same quantity of the same dataset, with equivalent context windows."
 
 The research used a variety of control conditions:
-* tuned and untuned explanations
-* scrambling explanations at a word level
-* scrambling explanations
-* using true non-explanations
+* tuned and untuned explanations,
+* scrambling explanations at a word level,
+* scrambling explanations,
+* using true non-explanations, and
 * annotating tasks with non-instructions.
 
-Use 0-shot to 5-shot prompts (the limit to 5 is somewhat arbitrary but necessary [my note]) for various combinations of task instructions (none, task instructions, or non-instruction) and explanantion types (none, other item explanation, true non-explanation, or scrambled explanation)
+The research team used 0-shot to 5-shot prompts (the limit to 5 is somewhat arbitrary but necessary [my note]) for various combinations of task instructions (none, task instructions, or non-instruction) and explanantion types (none, other item explanation, true non-explanation, or scrambled explanation)
 
 "Indeed, a human might ask for clarification of a confusing explanation, but our models do not have that opportunity or ability. To provide some insight into the potential benefits of more optimal explanations, we conducted two tuning experiments [p. 6]."
 
-Here is an interesting point.   What sort of design would allow a LM with NLG ability to ask for clarification?   Perhaps simply ask the model, "Do you have any questions", as part of a dialogue.
+This brings to mind some interesting ideas.   What sort of design would allow the LM to use its NLG ability to ask for clarification?   Could we tune the LM to ask good questions?  Perhaps one could simply ask the model, "Do you have any questions", as part of a dialogue.
 
-Start on page 6 here:  "Second we hand-tuned the explanations from prompts for five tasks ..."
+Explanations were hand-tuned to try to improve performance.   Examples of tuned and untuned explanations and of lessons learned are give in Appendix B.4.
+
+To measure the effects of different components of the prompts on performace methodes of hierchical/multilevel modeling were used (Gelman and Hill, 2006).
+
+Their methods produced:
+* a parameter fro the difficulty of each task,
+* a parameter for the difficulty of each question within a tasks, and
+* a parameter for how wach distinct set of explanations affects performance.
+
+### Results
+The predicted performance of the largest model is presented in the body of the paper (Gopher, with 280 Billion parameters).
+
+* Few-shot examples substantial improve performace relative to zero-shot
+* Untuned explanations improve performance with about 1/3 the effect of few-shot examples
+* Instructions improve performace but less than explanations
+* Examples and explanations together offer more substantial benefits than examples alone
+* Hand-tuning offers substantial benefit on tasks where it was tried
+* The benefit of untuned explanations does not vary in prompts or with or without task instructions or non-instructions
+* Only large models benefit from explanations
+* control explanations and non-explanations are neutral or harmful for the largest model.
+* untuned explanations significantly outperform all contral conditions for the largest models.
+* results seem to be consistent across different tasks types (Section 3.3)
+
+
+Start at 4. Related work (5_14_22)
+
+
+
+
+Untuned explanations outperform match control examples.
+
+
+
 
 
 
