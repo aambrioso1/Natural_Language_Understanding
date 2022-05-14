@@ -92,6 +92,7 @@ Quote:  "future larger models may exhibit yet larger benefits (p. 10)"
 * Why are post answer explanations interesting?
 
 Start at this question in 5 on page 11. 
+Read more about GitHub markdown:  https://github.github.com/gfm/
 
 
 
