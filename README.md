@@ -13,7 +13,7 @@ Other papers to look at:
 * https://arxiv.org/pdf/2205.01068.pdf
 
 
-### Notes on ["Can Language Models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
+### Notes on ["Can language models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
 
 
 This first paper on the Gwern's inner-monologue list.   Here is a quote that describes the area of study the paper seeks to advance.
