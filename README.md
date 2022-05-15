@@ -6,10 +6,6 @@ Here is a set up papers that cover this area:
 
 https://www.gwern.net/docs/ai/gpt/inner-monologue/index
 
-Here is a quote from the first paper on the list, ["Can Language Models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf),
-
-"A new paradigm has emerged in natural language processing: few-shot prompting of large language models. Such models appear to exhibit some in-context learning abilities, such that they can infer how to perform a new language task few-shot from a few examples of input and output pairs within the model’s context window, but without training."
-
 Other papers to look at:
 * https://arxiv.org/abs/2005.14165
 * https://github.com/google/BIG-bench/
@@ -19,11 +15,12 @@ Other papers to look at:
 
 ### Notes on ["Can Language Models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
 
-The first paper on the Gwern's inner-monologue list.   Here is a quote that describes there area of study the paper seeks to advance.
+
+This first paper on the Gwern's inner-monologue list.   Here is a quote that describes there area of study the paper seeks to advance.
 
 "A new paradigm has emerged in natural language processing: few-shot prompting of large language models. Such models appear to exhibit some in-context learning abilities, such that they can infer how to perform a new language task few-shot from a few examples of input and output pairs within the model’s context window, but without training."
 
-Another interesting way to look at this is to think of it as the beginning of a new language between human beings and large language models (LLMs).   Even more interesting is that the communication could continue to improve.   Both human being and the future LLMs are in a sense learning to communicate with each other.   As we figure out how to better explain a task will future LM give us verbal direction as to what information they need to solve a problem.   Will the emergent behaviour resembly human language development?   There are four scales of time to consider here:  (1) the infant learning language and (2) the child learning more language skills (4) the more nuisance learning involved in more mature language skills like essay writing and story telling and (4) the human species learning language through evolution. 
+Another interesting way to look at this is to think of it as the beginning of a new language between human beings and large language models (LLMs).   This communication could continue to improve.   Both human being and the future LLMs are in a sense learning to communicate with each other.   As we figure out how to better explain a task will future LMs give us verbal direction as to what information they need to solve a problem.   Will the emergent behaviour resembly human language development?   There are four scales of time to consider here:  (1) the infant learning language and (2) the child learning more language skills (4) the more nuisance learning involved in mature language skills like essay writing and story telling and (4) the human species learning language through evolution. 
 
 Care must be taken when creating prompts. From the abstract of [True Few_shot Learning with Language Models](https://arxiv.org/abs/2105.11447):
 
@@ -44,7 +41,7 @@ The research team used 0-shot to 5-shot prompts (the limit to 5 is somewhat arbi
 
 "Indeed, a human might ask for clarification of a confusing explanation, but our models do not have that opportunity or ability. To provide some insight into the potential benefits of more optimal explanations, we conducted two tuning experiments [p. 6]."
 
-This brings to mind some interesting ideas.   What sort of design would allow the LM to use its NLG ability to ask for clarification?   Could we tune the LM to ask good questions?  Perhaps one could simply ask the model, "Do you have any questions", as part of a dialogue.
+This brings to mind some interesting ideas.   What sort of design would allow an LLM to use its NLG ability to ask for clarification?   Could we tune the LM to ask good questions?  Perhaps one could simply ask the model, "Do you have any questions", as part of a dialogue.
 
 Explanations were hand-tuned to try to improve performance.   Examples of tuned and untuned explanations and of lessons learned are give in Appendix B.4.
 
