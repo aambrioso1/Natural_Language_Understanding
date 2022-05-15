@@ -16,7 +16,7 @@ Other papers to look at:
 ### Notes on ["Can Language Models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
 
 
-This first paper on the Gwern's inner-monologue list.   Here is a quote that describes there area of study the paper seeks to advance.
+This first paper on the Gwern's inner-monologue list.   Here is a quote that describes the area of study the paper seeks to advance.
 
 "A new paradigm has emerged in natural language processing: few-shot prompting of large language models. Such models appear to exhibit some in-context learning abilities, such that they can infer how to perform a new language task few-shot from a few examples of input and output pairs within the model’s context window, but without training."
 
