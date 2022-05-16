@@ -13,7 +13,7 @@ Other papers to look at:
 * https://arxiv.org/pdf/2205.01068.pdf
 
 
-##### Notes on ["Can language models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
+### Notes on ["Can language models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
 
 
 This first paper on the Gwern's inner-monologue list.   Here is a quote that describes the area of study the paper seeks to advance.
@@ -104,8 +104,8 @@ Quote:  "future larger models may exhibit yet larger benefits (p. 10)"
 * Can explanations improve few-shot learning?  Yes
 * Why are post answer explanations interesting? The authors contrast pre-answer chains-of-reasoning with post answer explanations:
 	* Some explanations are holistic and only make sense if the answer is known
-** The beneficial effect of explanations must be due to higher order inferences.
-* What do our results imply about an LMs' abilities for in-context learning.   The technique using matched controls in this research allowed the to test whether superficial features were responsible for the improved performance.   The LM show a significate advantage for real explanations.
+	* The beneficial effect of explanations must be due to higher order inferences.
+* What do our results imply about an LMs' abilities for in-context learning?   The technique using matched controls in this research allowed the to test whether superficial features were responsible for the improved performance.   The LM show a significate advantage for real explanations.
 * How do explanations relate to task instruction?  The benefits are similar and complementary.
 * What are the benefits and draw backs ofr the datasets used?  BIG-Bench provided a set of diverse and challenging tasks involving skills that are not typically representated in standard datasets.   But these task may not represent the kinds of task LMs are typically used for.   "Future work should explore the benefits of explanations beyond BIG-Bench. [p. 12]"
 
@@ -116,13 +116,17 @@ This question is very relavant to work in the AMHR lab so I have quoted their re
 Authors mention an interesting paper that suggest that LMs are lazy.  They use superficial features, unless the task is more challenging.  [When Classsifying Arguments ...](https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1244&context=scil)
 
 
-##### 6. Conclusions
+##### 6. Conclusions   
 * Explanations are beneficial.   Tuned explanations are better but untuned explanations out perform controls.
 
 Again the language here is pretty perfect so I quote:
 ...only large models can benefit from explanations—this capability is emergent. These results have implications not only for designing better language model prompts, but also for scientific understanding of the in-context learning abilities exhibited by language models.
 
+n the second paper on Gwern's list:
+### “SOCRATIC MODELS: COMPOSING ZERO-SHOT MULTIMODAL REASONING WITH LANGUAGE”, ZENG ET AL 2022
 
+"In this work, we show that this model diversity is symbiotic, and can be leveraged to build AI systems with structured Socratic dialogue—in which new multimodal tasks are formulated as a guided language-based exchange between different pre-existing foundation models, without additional finetuning.""
+Note o
 
 
 
