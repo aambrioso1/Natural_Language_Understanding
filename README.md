@@ -8,16 +8,16 @@ https://www.gwern.net/docs/ai/gpt/inner-monologue/index
 
 Other papers to look at:
 * https://arxiv.org/abs/2005.14165
-* https://github.com/google/BIG-bench/
+* https://github.com/google/BIG-bench/S
 * https://aclanthology.org/2021.acl-long.90.pdf
 * https://arxiv.org/pdf/2205.01068.pdf
 
 
-### Notes on ["Can language models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
+##### Notes on ["Can language models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
 
 
 This first paper on the Gwern's inner-monologue list.   Here is a quote that describes the area of study the paper seeks to advance.
-1.  Introduction
+#####  1. Introduction
 "A new paradigm has emerged in natural language processing: few-shot prompting of large language models. Such models appear to exhibit some in-context learning abilities, such that they can infer how to perform a new language task few-shot from a few examples of input and output pairs within the model’s context window, but without training."
 
 Another interesting way think about this is that it is the beginning of a new language between human beings and large language models (LLMs).   This communication could continue to improve.   Both human being and the future LLMs are in a sense learning to communicate with each other.   As we figure out how to better explain a task will future LMs give us verbal direction as to what information they need in order to solve a problem.   Will the emergent behaviour resemble human language development?   There are four scales of time to consider here:  (1) the infant learning language and (2) the child learning more language skills (4) the more nuisance learning involved in mature language skills like essay writing and story telling and (4) the human species learning language through evolution. 
@@ -27,7 +27,7 @@ Care must be taken when creating prompts. From the abstract of [True Few-Shot Le
 "Overall, our findings suggest that prior work significantly overestimated the true few-shot ability of LMs given the difficulty of few-shot model selection.""
 
 
-2. Methods
+##### 2. Methods
 
 The researchers used the [BIG-BENCH Colloboration](https://github.com/google/BIG-bench/) for a challenging set of tasks.  Chose a subset of 40 tasks and subtask involving a variety of skills
 
@@ -68,7 +68,7 @@ Their methods produced:
 * a parameter for the difficulty of each question within a tasks, and
 * a parameter for how wach distinct set of explanations affects performance.
 
-3. Results
+##### 3. Results
 The predicted performance of the largest model is presented in the body of the paper (Gopher, with 280 Billion parameters).
 
 * Few-shot examples substantial improve performace relative to zero-shot.
@@ -82,7 +82,7 @@ The predicted performance of the largest model is presented in the body of the p
 * Untuned explanations significantly outperform all control conditions for the largest models.
 * Results seem to be consistent across different tasks types (Section 3.3)
 
-4.  Related Work
+##### 4.  Related Work
 * Learning shown by LLMs is a form of implicit Bayseian inference.
 * Are LLMs learning or are they simpley "recoverying previously-experienced tasks." [p. 8]
 * Task instructions as zero-shot prompts or part of a few-shot prompt.
@@ -99,7 +99,7 @@ The predicted performance of the largest model is presented in the body of the p
 
 Quote:  "future larger models may exhibit yet larger benefits (p. 10)"
 
-5. Discussion
+##### 5. Discussion
 
 * Can explanations improve few-shot learning?  Yes
 * Why are post answer explanations interesting? The authors contrast pre-answer chains-of-reasoning with post answer explanations:
@@ -116,7 +116,7 @@ This question is very relavant to work in the AMHR lab so I have quoted their re
 Authors mention an interesting paper that suggest that LMs are lazy.  They use superficial features, unless the task is more challenging.  [When Classsifying Arguments ...](https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1244&context=scil)
 
 
-6. Conclusions
+##### 6. Conclusions
 * Explanations are beneficial.   Tuned explanations are better but untuned explanations out perform controls.
 
 Again the language here is pretty perfect so I quote:
