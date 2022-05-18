@@ -123,13 +123,17 @@ Again the language here is pretty perfect so I quote:
 ...only large models can benefit from explanations—this capability is emergent. These results have implications not only for designing better language model prompts, but also for scientific understanding of the in-context learning abilities exhibited by language models.
 
 The second paper on Gwern's list:
-### “SOCRATIC MODELS: COMPOSING ZERO-SHOT MULTIMODAL REASONING WITH LANGUAGE”, ZENG ET AL 2022
+### [SOCRATIC MODELS: COMPOSING ZERO-SHOT MULTIMODAL REASONING WITH LANGUAGE”, ZENG ET AL 2022](https://arxiv.org/pdf/2204.00598.pdf)
 
 "In this work, we propose that these model differences are complementary, and can be jointly leveraged
 to build AI systems with structured Socratic dialogue – in
 which new multimodal tasks are formulated as a guided exchange between different pre-existing language-based foundation models, without additional finetuning" [p. 1]
 
 "In the context of egocentric perception, we present a case study of Socratic Models (SMs) that can provide meaningful results for complex tasks such as generating free-form answers to contextual questions about egocentric video, by formulating video Q&A as short story Q&A, i.e. summarizing the video into a short story, then answering questions about it. Additionally, SMs can generate captions for Internet images, and are competitive with state-of-the-art on zero-shot video-to-text retrieval with 42.8 R@1 on MSR-VTT 1k-A. SMs demonstrate how to compose foundation models zero-shot to capture new multimodal functionalities, without domain-specific data collection." [From the Abstract]
+
+Socratic Models (SMs) are a class of systems that embrace the zero-shot capabilities of foundation models by engineering guided discussions between the
+independent models to reach a shared consensus on a taskspecific output. SMs use language as the representation by which inter-domain foundation models can jointly be used
+for inference. [p. 1]
 
 They use Visual Languge Models (VLMs), Language Models (LMs), and Audio Language Models (ALMs) together to perform NLU tasks.
 
@@ -144,12 +148,40 @@ for inference." [p. 1]
 
 It seem that not only are we learning to communicate with LMs different NLU system are learning to communicate with each other!
 
-Some idea:
+Some ideas:
 (1)  Story-telling as reasoning.
 (2)  Training LM on audio with emotional content and using this to enhance an SM.
+(3)  Testing the effectiveness of egocentric language.
+
+There "highlight" aaplication is open-ended reasoning about egocentric perception.
+
+"We find that simple scripted policies to guide a closed-loop exchange between pre-trained LM, VLM, and ALM models can (a) generate meaningful captions that respond to questions like “what am I doing?” with answers like “receiving a package” that span beyond the label set of standard vision datasets (Sigurdsson et al. 2018; Smaira et al. 2020), and (b) exhibit open-ended contextual Q&A capabilities previously thought to be out-of-reach for egocentric perception without domain-specific data collection." [p. 2]
 
 
+Contributions of this paper"
+(1)  The SM framework.
+(2)  demsonstraiton of an egocentric perception system using SMs.
+(3)  qualitative results on video understanding that is not covered by existing benchmarks.
+(4)  quantitative comparison to SOA visual understanding models using the MSR-VTT datset for video-to-text retrieval.
+(5)  a framework for unsupervised quantitavie model selection of SMs through sub-model ablations.
 
+Language can be used to compose existing models.
+
+This is a very attractive idea.   LMs trained for NLG should be able to demonstrate reasoning ability that can be leveraged to interpret any information.
+
+For open-ended reasoning, a key aspect of our approach is
+formulating video understanding as reading comprehension,
+i.e. re-frame “video Q&A” as a “short story Q&A” problem,
+where the language-based world-state history can be viewed
+as an interpretable state representation in the form of short
+stories, which can be used for reading comprehension Q&A,
+for which LMs have demonstrated strong zero-shot performance
+
+Note that section 7 has a discussion of egocentric perception.
+
+Start on Section 3.3:  Language-based World_State History from Video
+
+This section gives examples of how the LMs reasoning ability is used to guide the VLMs choices of activities. 
 
 
 
