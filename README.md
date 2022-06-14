@@ -2,7 +2,7 @@
 
 A repository of notes and information related to Natural Language Understanding.   My intention is to focus on large language models and their emerging ability learn from explanations (few-shot prompting).
 
-Here is a set up papers that cover this area:
+Here is a set of papers that cover this area:
 
 https://www.gwern.net/docs/ai/gpt/inner-monologue/index
 
