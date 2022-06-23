@@ -11,12 +11,13 @@ Other papers to look at:
 * https://github.com/google/BIG-bench/S
 * https://aclanthology.org/2021.acl-long.90.pdf
 * https://arxiv.org/pdf/2205.01068.pdf
+* [Rethinking the Role of Demonstrations:  What Makes In-Context Learning Work?] https://arxiv.org/pdf/2202.12837.pdf
 
 
 ### Notes on ["Can language models learn from explanations in context?"](https://arxiv.org/pdf/2204.02329.pdf)
 
-
 This first paper on the Gwern's inner-monologue list.   Here is a quote that describes the area of study the paper seeks to advance.
+
 #####  1. Introduction
 "A new paradigm has emerged in natural language processing: few-shot prompting of large language models. Such models appear to exhibit some in-context learning abilities, such that they can infer how to perform a new language task few-shot from a few examples of input and output pairs within the model’s context window, but without training."
 
@@ -125,7 +126,7 @@ Again the language here is pretty perfect so I quote:
 The second paper on Gwern's list:
 ### [SOCRATIC MODELS: COMPOSING ZERO-SHOT MULTIMODAL REASONING WITH LANGUAGE”, ZENG ET AL 2022](https://arxiv.org/pdf/2204.00598.pdf)
 
-"In this work, we propose that these model differences are complementary, and can be jointly leveraged
+"In this work, we propose that these model differences are complementary (VLMS and LMS), and can be jointly leveraged
 to build AI systems with structured Socratic dialogue – in
 which new multimodal tasks are formulated as a guided exchange between different pre-existing language-based foundation models, without additional finetuning" [p. 1]
 
@@ -160,10 +161,10 @@ There "highlight" aaplication is open-ended reasoning about egocentric perceptio
 
 Contributions of this paper"
 (1)  The SM framework.
-(2)  demsonstraiton of an egocentric perception system using SMs.
+(2)  demonstraiton of an egocentric perception system using SMs.
 (3)  qualitative results on video understanding that is not covered by existing benchmarks.
 (4)  quantitative comparison to SOA visual understanding models using the MSR-VTT datset for video-to-text retrieval.
-(5)  a framework for unsupervised quantitavie model selection of SMs through sub-model ablations.
+(5)  a framework for unsupervised quantitative model selection of SMs through sub-model ablations.
 
 Language can be used to compose existing models.
 
@@ -177,11 +178,15 @@ as an interpretable state representation in the form of short
 stories, which can be used for reading comprehension Q&A,
 for which LMs have demonstrated strong zero-shot performance
 
-Note that section 7 has a discussion of egocentric perception.
-
-Start on Section 3.3:  Language-based World_State History from Video
+Section 3.3:  Language-based World_State History from Video
 
 This section gives examples of how the LMs reasoning ability is used to guide the VLMs choices of activities. 
+
+Start with Appendix D
+Appendix D has a discussion of egocentric perception.
+
+
+
 
 
 
