@@ -1,5 +1,14 @@
 # Natural_Language_Understanding
 
+Need to reorganize this.    List papers and websites and short descriptions and reviews.    Other info should be linked here.
+
+
+Large Language Models (> than 1 billion parameters)
+GPT-3
+OPT: Open Pre-trained Transformed Language Models
+Bloom - [Megatron](https://arxiv.org/abs/1909.08053) on HuggingFace: https://huggingface.co/bigscience/bloom
+
+
 A repository of notes and information related to Natural Language Understanding.   My intention is to focus on large language models and their emerging ability learn from explanations (few-shot prompting).
 
 Here is a set of papers that cover this area:
